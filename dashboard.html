@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Médico</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar p-3" id="sidebar">
+        <div class="text-center mb-4">
+            <h3><a href="dashboard.html">Ortonova_sjo</a></h3>
+            <img src="img/avatars/FOTO-LOGIN.jpg" width="150px" alt="Logo" class="img-fluid rounded-circle mb-2">
+            <h4 class="highlight-on-hover">Dr. Jose Daniel Ensuncho</h4>
+            <small>Ceo Fundador de Ortonova_sjo</small>
+        </div>
+        <ul class="nav flex-column">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="dashboard.html" id="overviewDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-home"></i> Resumen
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="overviewDropdown">
+                    <li><a class="dropdown-item" href="#">Tablero</a></li>
+                    <li><a class="dropdown-item" href="#">Cita</a></li>
+                    <li><a class="dropdown-item" href="#">Detalles de paciente</a></li>
+                    <li><a class="dropdown-item" href="#">Línea de tiempo</a></li>
+                    <li><a class="dropdown-item" href="#">Solicitudes</a></li>
+                    <li><a class="dropdown-item" href="#">Online y Offline</a></li>
+                    <li><a class="dropdown-item" href="#">Análisis</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="paymentsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-dollar-sign"></i> Profesional
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="paymentsDropdown">
+                    <li><a class="dropdown-item" href="nuevo_usuario.html">Registrar nuevo</a></li>
+                    <li><a class="dropdown-item" href="#">Médico</a></li>
+                    <li><a class="dropdown-item" href="#">Asistencial</a></li>
+                    <li><a class="dropdown-item" href="#">Administrativo</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="patientsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-user-injured"></i> Mis Pacientes
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="patientsDropdown">
+                    <li><a class="dropdown-item" href="nuevo_paciente.html">Nuevo Paciente</a></li>
+                    <li><a class="dropdown-item" href="#">Historial de pacientes</a></li>
+                    <li><a class="dropdown-item" href="#">Detalles de pacientes</a></li>
+                    <li><a class="dropdown-item" href="medicamentos.html">Receta Medica</a></li>
+                    <li><a class="dropdown-item" href="Orden-Medica.html">Orden Medica</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="appointmentDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-calendar-check"></i> Programar Cita
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="appointmentDropdown">
+                    <li><a class="dropdown-item" href="cita-medica.html">Nueva Cita</a></li>
+                    <li><a class="dropdown-item" href="#">Selección de fecha</a></li>
+                    <li><a class="dropdown-item" href="#">Detalles de paciente</a></li>
+                    <li><a class="dropdown-item" href="#">Solicitud de cita</a></li>
+                    <li><a class="dropdown-item" href="#">Paciente reciente</a></li>
+                    <li><a class="dropdown-item" href="#">Línea de tiempo de citas</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-envelope"></i> Mensajes
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="messagesDropdown">
+                    <li><a class="dropdown-item" href="#">Detalles del paciente</a></li>
+                    <li><a class="dropdown-item" href="#">Historial de mensajes</a></li>
+                    <li><a class="dropdown-item" href="#">Notificación</a></li>
+                    <li><a class="dropdown-item" href="#">Generar reporte</a></li>
+                    <li><a class="dropdown-item" href="#">Video y llamada de audio</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="logoutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-sign-out-alt"></i> Cerrar sesión
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="logoutDropdown">
+                    <li><a class="dropdown-item" href="login.html">Ortonova_sjo</a></li>
+
+                </ul>
+            </li>
+        </ul> 
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content p-4">
+        <div class="container-fluid">
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-one overview-card border-0">
+                        <div class="card-body text-center">
+                            <div ><img src="img/appointment.png" alt="" width="84px"></div>
+                            <h5>Citas de Hoy</h5>
+                            <h1>3</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-two overview-card border-0">
+                        <div class="card-body text-center">
+                            <div ><img src="img/drug.png" alt="" width="84px"></div>
+                            <h5>Recetas</h5>
+                            <h1>12</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-three overview-card border-0">
+                        <div class="card-body text-center">
+                            <div ><img src="img/medical-checkup.png" alt="" width="84px"></div>
+                            <h5>Pacientes</h5>
+                            <h1>6</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-four overview-card border-0">
+                        <div class="card-body text-center">
+                            <div ><img src="img/hospital.png" alt="" width="84px"></div>
+                            <h5>Activos</h5>
+                            <h1>3</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Cards -->
+            <div class="row mt-4">
+                <div class="col-md-6 col-lg-6">
+                    <div class="card">
+                        
+                        <div class="card-body text-center">
+                            <div class="">
+                                <a href="cita-medica.html"><img src="img/examen.png" alt="" width="97px"></a>
+                            </div>
+                            <h3 class="text-primary">La mejor atención aquí </h3>
+                            <a href="cita-medica.html" class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"><p class="text-primary">Hacer una cita</p></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="card border-">
+                        <div class="card-header">Mensajes recientes</div>
+                        <div class="card-body">
+                            <ul>
+                                <li class="mb-3"><img src="img/avatars/01.png" alt="Anderson Chaparro" class="profile-img">Anderson Chaparro: Resultados Orden <span class="badge rounded-pill bg-one ">No Leido</span> </li>
+                                <li class="mb-3"><img src="img/avatars/02.png" alt="Brinny Vega" class="profile-img">Brinny Vega: Receta Medica  <span class="badge rounded-pill bg-two">Leido Hoy</span></li>
+                                <li class="mb-3"><img src="img/avatars/03.png" alt="Jesus Arroyo" class="profile-img">Jesus Arroyo: Solicitud de cita  <span class="badge rounded-pill bg-three">Destacado</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Today's Appointments Table -->
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="card border-0">
+                        <div class="card-header">Pacientes con citas hoy</div>
+                        <div class="card-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Nombre del Paciente</th>
+                                        <th>Hora de la Cita</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="img/avatars/01.png" alt="Anderson Chaparro" class="profile-img">
+                                            Anderson Chaparro
+                                        </td>
+                                        <td>08:45 AM</td>
+                                        <td class="crud-icons">
+                                            
+                                            <i class="fas fa-edit text-info"></i>
+                                            <i class="fas fa-trash text-danger"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="img/avatars/02.png" alt="Brinny Vega" class="profile-img">
+                                            Brinny Vega
+                                        </td>
+                                        <td>11:22 AM</td>
+                                        <td class="crud-icons">
+                                           
+                                            <i class="fas fa-edit text-info"></i>
+                                            <i class="fas fa-trash text-danger"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="img/avatars/03.png" alt="Carlos López" class="profile-img">
+                                            Jesus Arroyo
+                                        </td>
+                                        <td>03:38 PM</td>
+                                        <td class="crud-icons">
+                                            <i class="fas fa-edit text-info"></i>
+                                            <i class="fas fa-trash text-danger"></i>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $(".navbar-toggler").click(function(){
+                $("#sidebar").toggleClass("show");
+            });
+        });
+    </script>
+</body>
+</html>

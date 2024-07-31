@@ -1,0 +1,4 @@
+;/*FB_PKG_DELIM*/
+
+__d("E2EELinkPreviewXMADataStatus",[],(function(a,b,c,d,e,f){a=Object.freeze({LOADED:1,LOADING:2,DISABLED:3});f["default"]=a}),66);
+__d("MAWParseLinkPreviewXMAData",["E2EELinkPreviewXMADataStatus","I64","LSIntEnum"],(function(a,b,c,d,e,f,g){"use strict";var h,i;function a(a){var b=a==null?void 0:a.status,e=a==null?void 0:a.data;if(a==null||b==null||e==null)return null;a=(h||(h=d("I64"))).equal(b,(i||(i=d("LSIntEnum"))).ofNumber(c("E2EELinkPreviewXMADataStatus").DISABLED));b=JSON.parse(e);return Object.keys(b).length===0||b.url==null||a?null:b}g.parseLinkPreviewXMAData=a}),98);

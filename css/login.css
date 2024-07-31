@@ -1,0 +1,56 @@
+body, html {
+    height: 100%;
+    background: #E2E8F0;
+    margin: 0; /* Agregamos margen 0 para asegurar que no haya espacios innecesarios */
+    padding: 0; /* Agregamos relleno 0 para asegurar que no haya espacios innecesarios */
+}
+
+.login-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    border: none;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-img-left {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.form-floating > .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
+}
+
+.btn-primary {
+    background: #007bff;
+    border: none;
+    padding: 0.5rem 1rem; /* Agregamos un relleno para hacer los botones más clicables */
+    cursor: pointer; /* Cambiamos el cursor para indicar que es un botón cliclable */
+    color: white; /* Agregamos un color de texto para mejorar la accesibilidad */
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+.text-muted a {
+    text-decoration: none;
+    color: #6c757d; /* Color original del texto */
+}
+
+.text-muted a:hover {
+    color: #007bff; /* Color azul para el texto al pasar el cursor */
+}
